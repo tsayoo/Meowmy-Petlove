@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meowmy-Petlove</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="respons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="asset/images/paw.png" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100">
+    <div class="container">
+      <a class="navbar-brand mx-2" href="#">
+        <img src="asset/images/paw.png" alt="logo" width="30" />
+        Meowmy
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Adoption</a></li>
+              <li><a class="dropdown-item" href="#">Animal Needs</a></li>
+              <li>
+                <a class="dropdown-item" href="#">doctor consultation</a>
+              </li>
+              <li><a class="dropdown-item" href="#">book a lodging</a></li>
+              <li><a class="dropdown-item" href="#">Training</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#gallery" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Hotel's gallery </a></li>
+              <li><a class="dropdown-item" href="#">Adoption Gallery</a></li>
+              <li><a class="dropdown-item" href="#">Klinik Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" aria-disabled="true">Contact</a>
+          </li>
+        </ul>
+        <div>
+          <button class="button-primary">Daftar</button>
+          <button class="btn button-secondary">Masuk</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-md-6 hero-tagline my-auto">
+          <h1>
+            The best <span class="sh1">pet care service </span>for you!
+          </h1>
+          <p>
+            We are <span class="fw-bold">animal lovers</span> who care about
+            your pets.
+          </p>
+          <a href="#services">Lets see here!</a>
+        </div>
+      </div>
+    </div>
+    <img src="asset/images/hero5.png" class="img-hero position-absolute end-0 bottom-0 v-100" />
+    <!-- absolute = melayang -->
+  </section>
+
+  <!-- Layanan Section -->
+  <section id="services">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <h2>Our Services</h2>
+          <span class="sub">Caring for your lovely pets</span>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4 text-center">
+        <div class="card-layanan">
+          <div class="circle position-relative mx-auto">
+            <img src="asset/images/doct.png" class="position-absolute top-50 start-50 translate-middle">
+          </div>
+          <h3 class="mt-4">Doctor consultation</h3>
+          <p class="mt-3">
+            You can check your pet easily here, with verified consultant doctors.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="card-layanan">
+          <div class="circle position-relative mx-auto">
+            <img src="asset/images/hohotel.png" class="position-absolute top-50 start-50 translate-middle">
+
+
+          </div>
+          <h3 class="mt-4">Book a lodging</h3>
+          <p class="mt-3">
+            Leave your beloved pet here, and we will take care of it wholeheartedly.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="card-layanan">
+          <div class="circle position-relative mx-auto">
+
+            <img src="asset/images/shopstore.png" class="position-absolute top-50 start-50 translate-middle">
+
+          </div>
+          <h3 class="mt-4">Animal's Needs</h3>
+          <p class="mt-3">
+            buy all your pet needs at affordable prices only in here
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- search section -->
+  <section id="search" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Find what you need here!</h2>
+          <p>
+            You can adopt your favorite animal, 
+            or book a hotel to keep your pet safe while you're on holiday.
+          </p>
+        </div>
+        <div class="col-10 mt-5 mx-auto">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#jual" type="button"
+                role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                Adopt
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#sewa" type="button"
+                role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                Book
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="jual" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <div class="input-cari input-group mb-3">
+                <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <!-- <img src="asset/images/icons/cat.png" class="d-block d-lg-inline mx-auto" /> -->
+                  <i class='bx bxs-cat'></i>
+                  types 
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cat</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Dog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Rabbit</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Hamster</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Snake</a>
+                  </li>
+                </ul>
+                <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <!-- <img src="asset/akar-icons_money.png" class="d-block d-lg-inline mx-auto" /> -->
+                  <i class='bx bx-money'></i>
+                  Prices
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Best Price</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Discount</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Best seller</a>
+                  </li>
+                </ul>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                  placeholder="Write more in here" />
+                <button class="button-primary">Search</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="sewa" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <div class="input-cari input-group mb-3">
+                <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <!-- <img src="asset/ant-design_home-outlined.png" class="d-block d-lg-inline mx-auto" /> -->
+                  <i class='bx bxs-map' ></i>
+                  Location
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Near me</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">5 stars</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Most visited</a>
+                  </li>
+                </ul>
+                <button class="button-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <!-- <img src="asset/akar-icons_money.png" class="d-block d-lg-inline mx-auto" /> -->
+                  <i class='bx bx-money'></i>
+                  Prices
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Best Price</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Discount</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Best seller</a>
+                  </li>
+                </ul>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                  placeholder="Write More in Here" />
+                <button class="button-primary">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- recomend section -->
+  <section id="gallery">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="recomen-tit col-12 text-center mb-3">
+          <h2>Find a new furry Friend for you!</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+          <div class="card p-2" style="width: 22rem">
+            <img src="asset/images/adopt/a6.png"/>
+            <div class="card-body">
+              <h4>whitda Hailey</h4>
+              <p>
+                Cute Samoyed dog <br />
+                <span class="text-danger">Ready</span>
+              </p>
+            </div>
+            <div class="card-fas d-flex justify-content-between px-4">
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> 2
+                <p>Years Old</p>
+              </span>
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> loyal and obedient
+                <p></p>
+              </span>
+              <!-- <span>
+                <img src="asset/fluent_globe-surface-20-filled.png"/>
+                780m
+                <p>Luas Bangunan</p>
+              </span> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+          <div class="card p-2" style="width: 22rem">
+            <img src="asset/images/adopt/fotoini/cute14.png"/>
+            <div class="card-body">
+              <h4>Goofyru Youkie</h4>
+              <p>
+                American Wirehair Kitten<br />
+                <span class="text-danger">Ready</span>
+              </p>
+            </div>
+            <div class="card-fas d-flex justify-content-between px-4">
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> 1
+                <p>Month</p>
+              </span>
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> frisky and adorable
+                <p></p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+          <div class="card p-2" style="width: 22rem">
+            <img src="asset/images/adopt/fotoini/image 2.png"/>
+            <div class="card-body">
+              <h4>Chanterea Peomy</h4>
+              <p>
+                Pomeranian Puppy<br />
+                <span class="text-warning">Chosen</span>
+              </p>
+            </div>
+            <div class="card-fas d-flex justify-content-between px-4">
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> 3
+                <p>Month</p>
+              </span>
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> lively and cuty
+                <p></p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+          <div class="card p-2" style="width: 22rem">
+            <img src="asset/images/adopt/fotoini/image 40.png"/>
+            <div class="card-body">
+              <h4>Loganeous Cooper</h4>
+              <p>
+                Cool Californian king Snakes<br />
+                <span class="text-success">Adopted</span>
+              </p>
+            </div>
+            <div class="card-fas d-flex justify-content-between px-4">
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> 1
+                <p>Years Old</p>
+              </span>
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> rare and obedient
+                <p></p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+          <div class="card p-2" style="width: 22rem">
+            <img src="asset/images/adopt/fotoini/cute9.png"/>
+            <div class="card-body">
+              <h4>Graciemocca Nazilla</h4>
+              <p>
+                Russian Brown Kitten<br />
+                <span class="text-danger">Ready</span>
+              </p>
+            </div>
+            <div class="card-fas d-flex justify-content-between px-4">
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> 2
+                <p>Month</p>
+              </span>
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> funny and rare
+                <p></p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+          <div class="card p-2" style="width: 22rem">
+            <img src="asset/images/adopt/fotoini/image 36.png"/>
+            <div class="card-body">
+              <h4>Greeno and Greena</h4>
+              <p>
+                Beautiful Lovebird<br />
+                <span class="text-danger">Sewa</span>
+              </p>
+            </div>
+            <div class="card-fas d-flex justify-content-between px-4">
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> 1
+                <p>Years Old</p>
+              </span>
+              <span>
+                <img src="asset/images/icons/cadog 1.png"/> jolly and loyal
+                <p></p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fitur -->
+  <section id="gallery" class="mt-5 overflow-hidden">
+    <div class="container position-relative">
+      <div class="row mb-4">
+        <div class="col-lg-9 col-md-12 text-center text-lg-start">
+          <h2>Our Gallery</h2>
+        </div>
+        <div class="col-lg-3">
+          <!-- <button class="fit-but"> -->
+            <a href="gallery.html" class="fit-but d-flex align-items-center p-4"> look Others
+              <img src="asset/DH/knaan.png" class="ms-5" />
+            </a>
+           
+
+           
+          <!-- </button> -->
+        </div>
+      </div>
+    </div>
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-start overflow-x-scroll">
+          <div class="card-fitur position-relative me-3">
+            <img src="asset/images/gallery/inii/image 24.png" />
+
+            <div class="overlay position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+              <div class="position-absolute top-50 start-50 text-center translate-middle w-100">
+               <a href="asset/images/gallery/inii/24" class="btn" style="color: #fff;">Enlarge image</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-fitur position-relative me-3">
+            <img src="asset/images/gallery/inii/image 33.png" />
+
+            <div class="overlay position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+              <div class="position-absolute top-50 start-50 text-center translate-middle w-100">
+               <a href="asset/images/gallery/inii/image 33.png" class="btn" style="color: #fff;">Enlarge image</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-fitur position-relative me-3">
+            <img src="asset/images/gallery/inii/image 16.png" />
+
+            <div class="overlay position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+              <div class="position-absolute top-50 start-50 text-center translate-middle w-100">
+               <a href="asset/images/gallery/inii/image 16.png" class="btn" style="color: #fff;">Enlarge image</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-fitur position-relative me-3">
+            <img src="asset/images/gallery/inii/image 21.png" />
+
+            <div class="overlay position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+              <div class="position-absolute top-50 start-50 text-center translate-middle w-100">
+               <a href="asset/images/gallery/inii/image 21.png" class="btn" style="color: #fff;">Enlarge image</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-fitur position-relative me-3">
+            <img src="asset/images/gallery/inii/cute15.png" />
+
+            <div class="overlay position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+              <div class="position-absolute top-50 start-50 text-center translate-middle w-100">
+               <a href="asset/images/gallery/inii/cute15.png" class="btn" style="color: #fff;">Enlarge image</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-fitur position-relative me-3">
+            <img src="asset/images/gallery/inii/image 32.png" />
+
+            <div class="overlay position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+              <div class="position-absolute top-50 start-50 text-center translate-middle w-100">
+               <a href="asset/images/gallery/inii/image 32.png" class="btn" style="color: #fff;">Enlarge image</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-fitur position-relative me-3">
+            <img src="asset/images/gallery/inii/d4.png" />
+
+            <div class="overlay position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+              <div class="position-absolute top-50 start-50 text-center translate-middle w-100">
+               <a href="asset/images/gallery/inii/d4.png" class="btn" style="color: #fff;">Enlarge image</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-fitur position-relative me-3">
+            <img src="asset/images/gallery/inii/a8.png" />
+
+            <div class="overlay position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+              <div class="position-absolute top-50 start-50 text-center translate-middle w-100">
+               <a href="asset/images/gallery/inii/a8.png" class="btn" style="color: #fff;">Enlarge image</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="kiri position-absolute start-0 top-50 translate-middle-y">
+        <img src="asset/DH/kiri.png" />
+      </button>
+      <button class="kanan position-absolute end-0 top-50 translate-middle-y">
+        <img src="asset/DH/knaan.png" />
+      </button> -->
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact">
+    <div class="container-fluid overlay v-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>
+              Need help? We are ready to help you!
+            </h3>
+            <div class="kontak">
+              <h6>Kontak</h6>
+              <div class="mb-3">
+                <img src="asset/DH/1.png"/>
+
+                <a href="">Meowmy-shop || Jl. Antariksa 3, Milky Way, Pluto</a>
+              </div>
+              <div class="mb-3">
+                <img src="asset/DH/telp.png"/>
+
+                <a href="">+62 812 9592 8896</a>
+              </div>
+              <!-- <div class="mb-3">
+                <img src="asset/2.png"/>
+
+                <a href="">MyDreamHouse@gmail.com</a>
+              </div> -->
+            </div>
+            <h6>Social Media</h6>
+            <a class="social-media ig" href="https://www.instagram.com/the.tzalj/">
+              <i class="bx bxl-instagram-alt"></i></a>
+            <a class="social-media tt" href="https://www.tiktok.com/@LuvMeow">
+              <i class="bx bxl-tiktok"></i></a>
+            <a class="social-media mail" href="https://www.gmail.com">
+              <i class="bx bxl-gmail"></i></a>
+          </div>
+          <div class="col-md-6">
+            <div class="card-con">
+              <form>
+                <h2>Have a Question?</h2>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control bg-color" id="floatingInput" placeholder="name@example.com" />
+                  <label for="floatingInput" class="text-col">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control bg-color" id="floatingInput" placeholder="name@example.com" />
+                  <label for="floatingInput" class="text-col">password</label>
+                </div>
+                <button type="submit" class="button-con">Kirim</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="d-flex align-items-center position-relative">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 d-flex align-items-center justify-content-md-start justify-content-center mb-3">
+            <img src="asset/images/paw 1.png" />
+            <a href="">Meowmy-petlove</a>
+          </div>
+          <div class="col-md-5 d-flex justify-content-evenly">
+            <a href="#hero">Beranda</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="row Copyright position-absolute start-50 translate-middle">
+          <div class="col-12">
+            <p class="text-center">Copyright &copy; Zitsaa All Right Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="myscript/script.js"></script>
+</body>
+
+</html>
